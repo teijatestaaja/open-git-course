@@ -27,3 +27,29 @@ git branch –f master temp #update master to point to the new <temp> branch
 git merge origin/master --allow-unrelated-histories
 git push
 ```
+
+## Exercise 3: Branching
+
+Commands used:
+```git
+git remote add keskitaso https://course-gitlab.tuni.fi/git-course/intermediate-branches.git
+git fetch keskitaso
+git merge keskitaso/master --allow-unrelated-histories
+git checkout -b feature/create-awesome
+git add .
+git commit -m "added new feature"
+git push --set-upstream origin feature/create-awesome
+git checkout -b release
+git add .
+git commit -m "added new release"
+git push --set-upstream origin release
+```
+
+## Exercise 4: Normal merge
+
+Commands used:
+```git
+git remote add normaalimerge https://course-gitlab.tuni.fi/git-course/intermediate-normal-merge.git
+git fetch normaalimerge
+git merge normaalimerge/master --allow-unrelated-histories
+```
